@@ -1,0 +1,23 @@
+.transformacion{
+    transform: translatex(-100%);
+    transition: 0.3s transform;
+}
+/*fondo del boton*/
+.fondo{
+    background-image: var(--darkToggle);
+}
+/*fondo del body*/
+.color-body{
+    background-color: var(--veryDarkBlue);
+}
+/*circulo*/
+.circulo-color{
+    background-color: var(--veryDarkBlueDos);
+}
+/*Letras blancas*/
+.letras-blanc{
+    color: var(--White);
+}
+.fondo-cuadrados{
+    background-color: var(--darkDesaturated);
+}

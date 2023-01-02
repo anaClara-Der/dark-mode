@@ -1,0 +1,210 @@
+:root {
+    --limeGreen: hsl(163, 72%, 41%);
+    --brightRed: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(0.25turn, #fdc468, #df4996);
+    --youTube: hsl(348, 97%, 39%);
+    /*fondos*/
+    --darkToggle: linear-gradient(0.25turn, #378fe6, #3eda82);
+    --lightToggle: hsl(230, 22%, 74%);
+    /*Dark*/
+    --veryDarkBlue: hsl(230, 17%, 14%);
+    --veryDarkBlueDos: hsl(232, 19%, 15%);
+    --darkDesaturated: hsl(228, 28%, 20%);
+    --desaturated: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+    /*Light*/
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --lightGrayish: hsl(227, 47%, 96%);
+    --darkGrayishBlue: hsl(228, 12%, 44%);
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    background-color: var(--White);
+  }
+  /*contendor general*/
+  #contenedor {
+    width: 90%;
+    margin: 20px auto;
+  }
+  /*Encavezado*/
+  #titulo-contenedor {
+    width: 100%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .followers {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--darkGrayishBlue);
+  }
+  .tit-cont-uno {
+    border-bottom: 1px solid var(--darkGrayishBlue);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  /*boton modo claro u oscuro*/
+  .tit-cont-dos {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mode-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--darkGrayishBlue);
+  }
+  .mode-btn {
+    width: 60px;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    height: 30px;
+    background-color: var(--lightToggle);
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+  }
+  .circulo {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--lightGrayish);
+    right: 5px;
+    transition: 0.3s transform;
+  }
+  /*CUADRADOS*/
+  .cuadrado {
+    width: 100%;
+    background-color: var(--veryPaleBlue);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    border-radius: 10px;
+  }
+  /*línea de color sobre los cuadrados*/
+  .linea {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px 10px 00px 0px;
+  }
+  .cuadrado:first-child .linea {
+    background-color: var(--facebook);
+  }
+  .cuadrado:last-child .linea {
+    background-color: var(--youTube);
+  }
+  .linea-twitter {
+    background-color: var(--twitter);
+  }
+  .linea-instagram {
+    background-image: var(--instagram);
+  }
+  .social-usuarios {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .usuario {
+    color: var(--darkGrayishBlue);
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .cantidad {
+    font-size: 55px;
+  }
+  .cantidad-foll {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--darkGrayishBlue);
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .cantidad-actual {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--limeGreen);
+  }
+  .cuadrado:last-child .cantidad-actual {
+    color: var(--brightRed);
+  }
+  /*SEGUNDO BLOQUE*/
+  #num-contendor {
+    margin-top: 50px;
+  }
+  .titulo-secundario {
+    font-size: 25px;
+    margin: 20px 0px;
+    color: var(--darkGrayishBlue);
+  }
+  /*Rectángulos*/
+  .rectangulo {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--veryPaleBlue);
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .rect-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .rect-info h3 {
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+  }
+  .rect-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .span-rect-num {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .cont-porcent {
+    display: flex;
+    align-items: center;
+  }
+  .porcentaje {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--limeGreen);
+    margin-left: 2px;
+  }
+  .rectangulo:nth-child(2) .porcentaje {
+    color: var(--brightRed);
+  }
+  .rectangulo:nth-child(7) .porcentaje {
+    color: var(--brightRed);
+  }
+  .rectangulo:nth-child(8) .porcentaje {
+    color: var(--brightRed);
+  }

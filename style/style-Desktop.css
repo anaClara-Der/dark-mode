@@ -1,0 +1,31 @@
+@media (min-width: 1024px) {
+    /*Contenedor general*/
+    #contenedor {
+      width: 80%;
+    }
+    /*Primera parte*/
+    #titulo-contenedor {
+      display: flex;
+      justify-content: space-between;
+    }
+    .tit-cont-uno {
+      border: none;
+    }
+    .mode-text {
+      margin-right: 15px;
+    }
+    /*CUADRADOS*/
+    #destacados-contenedor {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+    #num-contendor {
+      margin-top: 20px;
+    }
+    .rectangulo-contenedor {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+  }
